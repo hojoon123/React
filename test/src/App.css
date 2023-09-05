@@ -1,0 +1,163 @@
+.child {
+  position: absolute;
+  top: 13.81rem;
+  left: 1.88rem;
+  border-radius: 23px;
+  background-color: var(--color-white);
+  width: 23rem;
+  height: 29.63rem;
+}
+.b,
+.have-a-nice {
+  position: absolute;
+  top: 23.63rem;
+  left: 4.88rem;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+}
+.have-a-nice {
+  top: 24.94rem;
+  left: 5.19rem;
+  font-size: var(--font-size-smi-6);
+}
+.item {
+  border: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 27.19rem;
+  left: 4.94rem;
+}
+.button,
+.div1,
+.inner {
+  position: absolute;
+  top: 39rem;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  left: 16.25rem;
+  font-size: var(--font-size-smi-6);
+  font-weight: 600;
+  font-family: var(--font-inter);
+  color: var(--color-mediumturquoise);
+  text-align: left;
+  display: inline-block;
+}
+.div1,
+.inner {
+  left: 8.19rem;
+}
+.inner {
+  top: 35.25rem;
+  left: 4.88rem;
+  cursor: pointer;
+}
+.frame-textfield {
+  border: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 30.5rem;
+  left: 4.94rem;
+}
+.rectangle-icon {
+  position: absolute;
+  top: 15rem;
+  left: calc(50% - 68px);
+  width: 8.5rem;
+  height: 6.06rem;
+  object-fit: cover;
+}
+.with-campus {
+  position: absolute;
+  top: 9.69rem;
+  left: calc(50% - 125px);
+  font-size: 2rem;
+  font-family: var(--font-angkor);
+  color: var(--color-white);
+  text-align: center;
+}
+.div {
+  position: relative;
+  border-radius: 30px;
+  background-color: var(--color-mediumturquoise);
+  width: 100%;
+  height: 57.88rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: 1.1rem;
+  color: var(--color-gray);
+  font-family: var(--font-inter);
+}
+
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .child {
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 8rem;
+  }
+
+  .b,
+  .have-a-nice {
+    top: 18.63rem;
+    left: 2.88rem;
+    font-size: var(--font-size-smi-6);
+  }
+
+  .have-a-nice {
+    top: 19.94rem;
+    left: 3.19rem;
+  }
+
+  .item {
+    top: 23.19rem;
+    left: 3.94rem;
+  }
+
+  .button,
+  .div1,
+  .inner {
+    top: 32rem;
+  }
+
+  .button {
+    left: 4.25rem;
+    font-size: var(--font-size-smi-6);
+  }
+
+  .div1,
+  .inner {
+    left: 2.19rem;
+  }
+
+  .inner {
+    top: 29.25rem;
+    left: 1.88rem;
+  }
+
+  .frame-textfield {
+    top: 26.5rem;
+    left: 1.94rem;
+  }
+
+  .rectangle-icon {
+    top: 12rem;
+    left: calc(50% - 50px);
+    width: 6.5rem;
+    height: 4.56rem;
+  }
+
+  .with-campus {
+    top: 6.69rem;
+    left: calc(50% - 75px);
+    font-size: 1.5rem;
+  }
+
+  .div {
+    height: 50rem;
+  }
+}
