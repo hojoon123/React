@@ -47,6 +47,7 @@ function App() {
               <p>{postTime}</p>
               <button onClick={()=>{
                 let copyLike = [...like];
+                // i번째 인덱스 값 0 유지 1 삭제
                 copyLike.splice(i, 1);
                 likeChange(copyLike);
                 let copyPost = [...post];
@@ -66,10 +67,11 @@ function App() {
           set_value(e.target.value);
         } }></input>
         <button onClick={ ()=>{
+          // trim 공백제거
           if (in_value.trim() === '') {
             return;
           }
-      
+          // [...] 리스트 벗겼다가 다시 입히기
           let copyLike = [...like];
           copyLike.unshift(0);
           likeChange(copyLike);
@@ -83,6 +85,7 @@ function App() {
       </div>
 
       { 
+      // 컴포넌트 사용
         modal === true ? <Modal tmp={post} tmpChange = {postChange} title={title}></Modal> : null
       }
 
