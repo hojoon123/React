@@ -47,7 +47,7 @@ function App() {
               <p>{postTime}</p>
               <button onClick={()=>{
                 let copyLike = [...like];
-                // i번째 인덱스 값 0 유지 1 삭제
+                // i번째 인덱스 값 0 유지 1 삭제.
                 copyLike.splice(i, 1);
                 likeChange(copyLike);
                 let copyPost = [...post];
