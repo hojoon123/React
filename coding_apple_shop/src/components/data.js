@@ -24,4 +24,4 @@ let shoes_data = [
     }
 ]
 
-export default shoes_data;
+export { shoes_data };
