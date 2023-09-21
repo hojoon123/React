@@ -9,7 +9,7 @@ import axios from 'axios';
 
 function App() {
 
-  let [shoes] = useState(shoes_data)
+  let [shoes, setShoes] = useState(shoes_data)
   return (
     <div className="App">
 
@@ -27,8 +27,13 @@ function App() {
         <img src={process.env.PUBLIC_URL + '/test_images/bg_image.png'}></img>
       </div>
       <Button on onClick={ () => {
+        //ajax 쏘는 법 1. XMLHttpRequest(옛날) 2. fetch()(요즘) 3. axios(외부)
       axios.get('https://codingapple1.github.io/shop/data2.json')
-      .then((e)=>{console.log(e.data)})
+      .then((e)=>{
+        console.log(e.data)
+        let copy = [...shoes, ...e.data];
+        setShoes(copy);
+      })
       .catch(()=>{
         console.log('실패함 ㅅㄱ')
       })
@@ -47,7 +52,6 @@ function App() {
               </Row>
             </Container>
           </>
-          // ajax 쏘는 법 1. XMLHttpRequest(옛날) 2. fetch()(요즘) 3. axios(외부)
         } />
         <Route path="/detail/:id" element={ <Detail shoe = {shoes} /> } />
         <Route path="/Cart" element={ <div>카트페이지임</div> } />

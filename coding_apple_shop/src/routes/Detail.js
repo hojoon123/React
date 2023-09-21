@@ -58,7 +58,7 @@ function Detail(props){
             </Box>
             <Row>
                 <Col md = {6}>
-                    <img src={current_shoes.imageSrc} alt="상품 이미지" className="img-fluid"></img>
+                    <img src= {`https://codingapple1.github.io/shop/shoes${current_shoes.id+1}.jpg`} alt="상품 이미지" className="img-fluid"></img>
                 </Col>
                 <Col md = {6} mt = {4} className='detail-col'>
                     <h4 pt = {5}>{current_shoes.title}</h4>
